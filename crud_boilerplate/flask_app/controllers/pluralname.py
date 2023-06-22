@@ -27,8 +27,8 @@ from flask_app.models.MODEL_FILE_NAME import ClassName
 #   return render_template("template.html", user/order/thing = user/order/thing)
 
 # Update
-@app.route("logout")
-def logout()
+@app.route("/logout")
+def logout():
     session.clear()
     return redirect("/")
 
